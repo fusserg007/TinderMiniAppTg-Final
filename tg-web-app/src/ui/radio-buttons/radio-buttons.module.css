@@ -1,0 +1,25 @@
+.container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+.container.alignRight {
+  justify-content: flex-end;
+}
+
+.item {
+  padding: 10px 20px;
+  border-radius: 10px;
+  color: var(--app-text-color);
+  border: 1px solid var(--app-hint-color);
+  font-size: 16px;
+  line-height: 1;
+  transition: all 0.2s;
+  cursor: pointer;
+}
+
+.item.actived {
+  color: var(--app-button-text-color);
+  background-color: var(--app-button-color);
+  border-color: var(--app-button-color);
+}
